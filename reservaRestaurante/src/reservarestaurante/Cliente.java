@@ -15,5 +15,16 @@ public class Cliente {
     private int Telefone;
     private String Email;
     
-    
+   public void setnome(String nomecli){
+    nome = nomecli;
+   }
+   public void setCPF(int cpf){
+       CPF = cpf;
+   }
+   public void setTelefone(int tel){
+       Telefone = tel;
+   }
+   public void setEmail(String email){
+       Email = email;
+   }
 }

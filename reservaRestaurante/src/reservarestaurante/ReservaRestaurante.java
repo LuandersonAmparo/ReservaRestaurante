@@ -8,6 +8,7 @@ package reservarestaurante;
 /**
  *
  * @author Luanderson Amparo
+ * @author Lucas Alves
  */
 public class ReservaRestaurante {
 

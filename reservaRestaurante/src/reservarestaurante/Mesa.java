@@ -23,5 +23,8 @@ public class Mesa {
     private void liberarMesa() {
 
     }
+    public void setmesa(int numeroMesa){
+        Numero = numeroMesa;
+    }
 
 }

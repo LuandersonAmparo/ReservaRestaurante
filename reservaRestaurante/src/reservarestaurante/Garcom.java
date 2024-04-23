@@ -21,7 +21,7 @@ public class Garcom {
     private void atenderMesa(Mesa mesa){
         
     }
-    private void fecharCOnta(Mesa mesa){
+    private void fecharConta(Mesa mesa){
         
     }
     

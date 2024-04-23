@@ -7,21 +7,22 @@ package reservarestaurante;
 /**
  *
  * @author Luanderson Amparo
+ * @author Lucas Alves
  */
 public class Cliente {
     
     private String nome;
-    private int CPF;
-    private int Telefone;
+    private double CPF;
+    private double Telefone;
     private String Email;
     
    public void setnome(String nomecli){
     nome = nomecli;
    }
-   public void setCPF(int cpf){
+   public void setCPF(double cpf){
        CPF = cpf;
    }
-   public void setTelefone(int tel){
+   public void setTelefone(double tel){
        Telefone = tel;
    }
    public void setEmail(String email){

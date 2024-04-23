@@ -21,42 +21,46 @@ public class ReservaRestaurante {
         // TODO code application logic here
         Scanner read = new Scanner(System.in);//declarando um Scanner
         Cliente cli = new Cliente();//Instanciando a classe cliente.
-        Mesa ms = new Mesa();
+        Mesa ms = new Mesa();//Instanciando a classe mesa.
 
         System.out.println("Seja Bem Vindo");
         int opcao = 0;
         do {
             System.out.println("1. Fazer Uma Reserva");
-            System.out.println("2. Fazer pedido");
-            System.out.println("3. cadastrar Produtos ");
-            System.out.println("4. cadastrar Funcionarios");
-            System.out.println("5. cadastrar mesa");
-            System.out.println("6. cadastar cardapio");
-            System.out.println("7. fechar conta/comanda");
-            System.out.println("8. gerar relatorio");
+            System.out.println("2. Consultar Reserva");
+            System.out.println(". Fazer pedido");
+            System.out.println(". cadastrar Produtos ");
+            System.out.println(". cadastrar Funcionarios");
+            System.out.println(". cadastrar mesa");
+            System.out.println(". cadastar cardapio");
+            System.out.println(". fechar conta/comanda");
+            System.out.println(". gerar relatorio");
             opcao = read.nextInt();
 
             switch (opcao) {
                 case 1:
                     
                     System.out.println("Infome o nome do Cliente");
+                    read.nextLine();
                     String nomecli = read.nextLine();
                     cli.setnome(nomecli);
                     
                     System.out.println("Infome o CPF");
-                    int cpf = read.nextInt();
+                    double cpf = read.nextDouble();
                     cli.setCPF(cpf);
                     
                     System.out.println("Informe o numero de Telefone");
-                    int tel = read.nextInt();
+                    double tel = read.nextDouble();
                     cli.setTelefone(tel);
                     
                     System.out.println("infome o Email para contato");
+                    read.nextLine();
                     String email = read.nextLine();
                     cli.setEmail(email); 
                     
                     System.out.println("Informe o numero da mesa");
-                    
+                    int numeroMesa = read.nextInt();
+                    ms.setmesa(numeroMesa);
                     break;
                 case 2:
                     break;

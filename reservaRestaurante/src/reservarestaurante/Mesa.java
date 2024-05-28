@@ -70,4 +70,12 @@ public void listarMesa(){
         System.out.println(statusMesa.get(indice));
     }
 }
+
+    void setNumero(int numero) {
+        
+    }
+
+    void setCapacidade(int capacidade) {
+        
+    }
 }

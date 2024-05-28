@@ -62,7 +62,7 @@ public class Login {
             System.out.println("3. cadastrar Produtos ");
             System.out.println("4. Listar Produtos");
             System.out.println("5. listar mesa");
-            System.out.println("7. gerar relatorio");
+            System.out.println("6. gerar relatorio");
             System.out.println("0. Para Sair");
 
             select = input.nextInt();
@@ -78,7 +78,9 @@ public class Login {
                 case 3:
                     ge.cadastrarProduto();
                     break;
-                case 4:
+                case 4://Listar os Produtos
+                    Produto produto = new Produto();
+                    produto.verificarEstoque();
                     break;
                 case 5:
                     Mesa ms = new Mesa();
@@ -86,10 +88,7 @@ public class Login {
                     ge.cadastrarMesa(); //chamando o metodo de cadastro de mesa
                     break;
                 case 6:
-                    break;
-                case 7:
-
-                    ge.gerarRelatorio(); //chamando o metodo gerarRelatorio
+                   // ge.gerarRelatorio(); //chamando o metodo gerarRelatorio
                     break;
                 default:
                     System.out.println("The end");

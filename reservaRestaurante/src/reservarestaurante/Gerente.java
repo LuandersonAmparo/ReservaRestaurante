@@ -6,6 +6,7 @@ O gerente terá acesso ao estoque, ao cadastro de mesas e aos relatórios.*/
  */
 package reservarestaurante;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -22,8 +23,24 @@ public class Gerente {
     private int senha;
     private String funcao;//Gerante
 
+    
+    private ArrayList<Mesa> mesas = new ArrayList<Mesa>(); // Lista de mesas
+    private ArrayList<Produto> produtos = new ArrayList<Produto>(); // Lista de produtos
+    
     public void cadastrarMesa() {
+        System.out.println("Informe o número da mesa:");
+        int numero = input.nextInt();
+        input.nextLine(); // Limpar o buffer
+        System.out.println("Informe a capacidade da mesa:");
+        int capacidade = input.nextInt();
+        input.nextLine(); // Limpar o buffer
 
+        // Criar uma nova mesa e adicioná-la à lista de mesas
+        Mesa mesa = new Mesa();
+        mesa.setNumero(numero);
+        mesa.setCapacidade(capacidade);
+        mesas.add(mesa);
+        System.out.println("Mesa cadastrada com sucesso!");
     }
 
     public void cadastrarProduto() {
@@ -31,10 +48,10 @@ public class Gerente {
         produt.adicionarProdutos();
     }
 
-    public void gerarRelatorio() {
+    /* public void gerarRelatorio() {
 
     }
-
+     */
     public void fazerReserva() {
         Cliente cli = new Cliente();//Instanciando a classe cliente.
         Mesa ms = new Mesa();//Instanciando a classe mesa.
@@ -43,38 +60,18 @@ public class Gerente {
         System.out.println("Infome o nome do Cliente");
         cli.nome = input.next();
 
-        //input.nextLine();
-        //String nomecli = input.nextLine();
-        // cli.setnome(nomecli);
-        //reserva.add(this);
         System.out.println("Infome o CPF");
         cli.CPF = input.nextDouble();
-        //double cpf = input.nextDouble();
-        // cli.setCPF(cpf);
 
         System.out.println("Informe o numero de Telefone");
         cli.Telefone = input.nextDouble();
-        //double tel = input.nextDouble();
-        // cli.setTelefone(tel);
 
         System.out.println("infome o Email para contato");
         cli.Email = input.next();
-        //input.nextLine();
-        //String email = input.nextLine();
-        //cli.setEmail(email);
 
         System.out.println("Informe a Quantidade de Lugares");
         cli.Lugares = input.nextInt();
-        //input.nextLine();
-        //int lugares = input.nextInt();
-        //cli.setLugares(lugares);
-
-        // System.out.println("Informe o numero da mesa");
-        //ms.Numero = input.nextInt();
-        // int numeroMesa = input.nextInt();
-        //ms.setmesa(numeroMesa);
         re.novaReserva(cli);
-        //re.novaReserva(ms);
 
     }
 

@@ -4,29 +4,59 @@
  */
 package reservarestaurante;
 
+//import java.util.Scanner;
+
 /**
  *
  * @author Luanderson Amparo
  * @author Lucas Alves
  */
 public class Cliente {
+//static Scanner input = new Scanner(System.in);//declarando um Scanner Statico
     
-    private String nome;
-    private double CPF;
-    private double Telefone;
-    private String Email;
-    
-   public void setnome(String nomecli){
-    nome = nomecli;
-   }
-   public void setCPF(double cpf){
-       CPF = cpf;
-       System.out.println("teste de guit");
-   }
-   public void setTelefone(double tel){
-       Telefone = tel;
-   }
-   public void setEmail(String email){
-       Email = email;
-   }
+    public String nome;
+    public double CPF;
+    public double Telefone;
+    public String Email;
+    public int Lugares;
+/*
+    public void getnome(String nomecli) {
+        this.nome = nomecli;
+    }
+
+    public void setnome(String nomecli) {
+        this.nome = nomecli;
+    }
+
+    public void getCPF(double cpf) {
+        this.CPF = cpf;
+    }
+
+    public void setCPF(double cpf) {
+        this.CPF = cpf;
+    }
+
+    public void getTelefone(double tel) {
+        this.Telefone = tel;
+    }
+
+    public void setTelefone(double tel) {
+        this.Telefone = tel;
+    }
+
+    public void getEmail(String email) {
+        this.Email = email;
+    }
+
+    public void setEmail(String email) {
+        this.Email = email;
+    }
+
+    public void getLugares(int lugares) {
+        this.Lugares = lugares;
+    }
+
+    public void setLugares(int lugares) {
+        this.Lugares = lugares;
+    }*/
 }

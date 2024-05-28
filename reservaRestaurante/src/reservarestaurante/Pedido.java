@@ -16,10 +16,10 @@ public class Pedido {
     private String itemPedido;
     private double valorTotal;
     
-    private void adicionarItem(Produto produto){
-        System.out.println("teste de guithub");
+    public void adicionarItem(Produto produto){
+        
     }
-    private void calcularTotal(){
+    public void calcularTotal(){
         
     }
     

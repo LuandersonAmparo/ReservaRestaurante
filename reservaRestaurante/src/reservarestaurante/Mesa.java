@@ -5,6 +5,8 @@
  */
 package reservarestaurante;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Luanderson Amparo
@@ -12,19 +14,60 @@ package reservarestaurante;
  */
 public class Mesa {
 
-    private int Numero;
-    private int Capacidade;
-    private String Status; //livre, ocupada, reservada.
+    private ArrayList<String> statusMesa = new ArrayList<String>();
+    private ArrayList<Integer> capacidadeMesa = new ArrayList<Integer>();
 
-    private void reservarMesa(Garcom garcom, Cliente cliente, int numeroMesa) {
-        System.out.println("teste de guit");
+    public int Numero;//define o numero da mesa;
+    public int Capacidade; //define a quantidade de pessoas que cabem numa mesa;
+    public String Status; //livre, ocupada, reservada;
+
+    public void mesasCadastrada() {
+        
+        statusMesa.add("livre");
+        capacidadeMesa.add(4);
+
+        statusMesa.add("livre");
+        capacidadeMesa.add(2);
+
+        statusMesa.add("ocupada");
+        capacidadeMesa.add(6);
+
+        statusMesa.add("ocupada");
+        capacidadeMesa.add(8);
+
+        statusMesa.add("livre");
+        capacidadeMesa.add(5);
+
+        statusMesa.add("livre");
+        capacidadeMesa.add(3);
+
+        statusMesa.add("ocupada");
+        capacidadeMesa.add(7);
+
+        statusMesa.add("livre");
+        capacidadeMesa.add(4);
+
+        statusMesa.add("livre");
+        capacidadeMesa.add(2);
+
+        statusMesa.add("ocupada");
+        capacidadeMesa.add(6);
     }
 
-    private void liberarMesa() {
+    public void reservarMesa(Garcom garcom, Cliente cliente, int numeroMesa) {
 
     }
-    public void setmesa(int numeroMesa){
-        Numero = numeroMesa;
+
+    public void liberarMesa() {
+
     }
 
+    public void setmesa(int numeroMesa) {
+        this.Numero = numeroMesa;
+    }
+public void listarMesa(){
+    for(int indice = 0; indice <statusMesa.size();indice ++){
+        System.out.println(statusMesa.get(indice));
+    }
+}
 }

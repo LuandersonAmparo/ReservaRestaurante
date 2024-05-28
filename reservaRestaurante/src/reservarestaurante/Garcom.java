@@ -18,10 +18,10 @@ public class Garcom {
     private int Senha;
     private String Funcao;//garçom
     
-    private void atenderMesa(Mesa mesa){
-        System.out.println("teste de guit");
+    public void atenderMesa(Mesa mesa){
+        
     }
-    private void fecharConta(Mesa mesa){
+    public void fecharConta(Mesa mesa){
         
     }
     

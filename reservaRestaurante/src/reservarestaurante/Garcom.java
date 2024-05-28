@@ -19,7 +19,7 @@ public class Garcom {
     private String Funcao;//garçom
     
     private void atenderMesa(Mesa mesa){
-        
+        System.out.println("teste de guit");
     }
     private void fecharConta(Mesa mesa){
         

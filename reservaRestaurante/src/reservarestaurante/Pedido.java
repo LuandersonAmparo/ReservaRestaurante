@@ -17,7 +17,7 @@ public class Pedido {
     private double valorTotal;
     
     private void adicionarItem(Produto produto){
-        
+        System.out.println("teste de guithub");
     }
     private void calcularTotal(){
         

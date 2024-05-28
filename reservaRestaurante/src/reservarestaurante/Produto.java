@@ -22,7 +22,7 @@ public class Produto {
     }
 
     private void verificarEstoque() {
-
+        System.out.println("teste de guit");
     }
 
 }

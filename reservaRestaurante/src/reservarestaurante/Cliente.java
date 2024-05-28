@@ -21,6 +21,7 @@ public class Cliente {
    }
    public void setCPF(double cpf){
        CPF = cpf;
+       System.out.println("teste de guit");
    }
    public void setTelefone(double tel){
        Telefone = tel;

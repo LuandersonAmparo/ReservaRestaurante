@@ -36,7 +36,7 @@ public class ReservaRestaurante {
             System.out.println(". fechar conta/comanda");
             System.out.println(". gerar relatorio");
             opcao = read.nextInt();
-
+            System.out.println("teste do guithub");
             switch (opcao) {
                 case 1:
                     

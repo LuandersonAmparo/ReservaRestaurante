@@ -17,7 +17,7 @@ public class Mesa {
     private String Status; //livre, ocupada, reservada.
 
     private void reservarMesa(Garcom garcom, Cliente cliente, int numeroMesa) {
-
+        System.out.println("teste de guit");
     }
 
     private void liberarMesa() {

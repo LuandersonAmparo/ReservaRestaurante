@@ -18,7 +18,7 @@ public class Gerente {
     private String funcao;//Gerante
     
     private void cadastrarMesa(Mesa mesa){
-        
+        System.out.println("teste de guit");
     }
     private void cadastrarProduto(Produto produto){
         

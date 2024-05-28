@@ -14,7 +14,7 @@ public class Login {
 
     Gerente ge = new Gerente();//Instanciando a classe Gentente
     Reserva reserva = new Reserva();
-
+    Produto produto = new Produto();
     public void login() {
         String tipoLog;
         Scanner input = new Scanner(System.in);
@@ -79,7 +79,9 @@ public class Login {
                     ge.cadastrarProduto();
                     break;
                 case 4://Listar os Produtos
-                    Produto produto = new Produto();
+                    produto.estoque();
+                    produto.adicionarProdutos();
+                    
                     produto.verificarEstoque();
                     break;
                 case 5:
@@ -106,8 +108,16 @@ public class Login {
             select = input.nextInt();
             switch (select) {
                 case 1:
+                    Garcom garcom = new Garcom();
+                    System.out.println("informe o numero da mesa");
+                    int mesa = input.nextInt();
+                   // garcom.atenderMesa(mesa);
+                    
                     break;
                 case 2:
+                    System.out.println("Informe o numero da mesa ");
+                    mesa = input.nextInt();
+                    //garcom.fecharConta(mesa);
                     break;
                 default:
                     System.out.println("The end ");

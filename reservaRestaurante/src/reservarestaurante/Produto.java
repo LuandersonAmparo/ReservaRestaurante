@@ -65,6 +65,9 @@ public class Produto {
         for (int i = 0; i < menu.size(); i++) {
             System.out.println(menu.get(i) + " - R$" + precos.get(i));
         }
+        System.out.println(menu);
+        System.out.println(precos);
+        System.out.println(menu.size());
     }
 
     public void adicionarProdutos() {

@@ -26,6 +26,7 @@ public class Gerente {
     
     private ArrayList<Mesa> mesas = new ArrayList<Mesa>(); // Lista de mesas
     private ArrayList<Produto> produtos = new ArrayList<Produto>(); // Lista de produtos
+    Reserva re = new Reserva(); //Instanciando a classe Reserva c/ ArrayList
     
     public void cadastrarMesa() {
         System.out.println("Informe o número da mesa:");
@@ -54,8 +55,8 @@ public class Gerente {
      */
     public void fazerReserva() {
         Cliente cli = new Cliente();//Instanciando a classe cliente.
-        Mesa ms = new Mesa();//Instanciando a classe mesa.
-        Reserva re = new Reserva(); //Instanciando a classe Reserva c/ ArrayList
+        //Mesa ms = new Mesa();//Instanciando a classe mesa.
+        
 
         System.out.println("Infome o nome do Cliente");
         cli.nome = input.next();
@@ -71,7 +72,9 @@ public class Gerente {
 
         System.out.println("Informe a Quantidade de Lugares");
         cli.Lugares = input.nextInt();
+        
         re.novaReserva(cli);
+        
 
     }
 

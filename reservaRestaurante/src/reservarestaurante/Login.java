@@ -63,6 +63,7 @@ public class Login {
             System.out.println("4. Listar Produtos");
             System.out.println("5. listar mesa");
             System.out.println("6. gerar relatorio");
+            System.out.println("7. Fazer Long off");
             System.out.println("0. Para Sair");
 
             select = input.nextInt();
@@ -91,6 +92,9 @@ public class Login {
                     break;
                 case 6:
                    // ge.gerarRelatorio(); //chamando o metodo gerarRelatorio
+                    break;
+                case 7:
+                    login();//Chamando a funcao login 
                     break;
                 default:
                     System.out.println("The end");

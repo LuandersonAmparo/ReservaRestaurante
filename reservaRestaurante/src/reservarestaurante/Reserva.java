@@ -16,16 +16,14 @@ public class Reserva {
 
     public void novaReserva(Cliente NR) {
         reserva.add(NR);
+        System.out.println("imprimindo a variavel NR" +NR);
+        System.out.println("tamanho: "+reserva.size());
+        
     }
 
     public void consultarReserva() {
-        System.out.println("teste for normal");
-        for (int i = 0; i < reserva.size(); i++) {
-            System.out.println("imprimindo I " + i);
-        }
-        System.out.println("teste forech");
-        for (int indice = 0; indice < reserva.size(); indice++) {
-            System.out.println("imprimindo " + reserva.get(indice));
+        for(Cliente c:reserva){
+            System.out.println(c.CPF +c.Lugares +c.Telefone +c.Email +c.nome);
         }
 
     }
